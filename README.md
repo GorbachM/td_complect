@@ -1,7 +1,38 @@
-# Vue 3 + Vite
+Запуск проекта:
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Проект доступен по ссылке: https://github.com/GorbachM/td_complect
+```markdown
+1. Сначала склонируйте репозиторий с проектом с помощью команды:
 
-## Recommended IDE Setup
+   ```bash
+   git clone 
+   ```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+2. Перейдите в папку проекта:
+
+   ```bash
+   cd название-репозитория
+   ```
+
+3. Установите зависимости с помощью npm:
+
+   ```bash
+   npm install
+   ```
+
+4. Теперь можно собрать Docker образ, используя команду:
+
+   ```bash
+   docker build -t <имя-образа> .
+   ```
+
+   Замените `<имя-образа>` на желаемое имя для вашего Docker образа.
+
+5. После успешной сборки образа, можно запустить контейнер, привязав порт 3000 контейнера к порту хоста:
+
+   ```bash
+   docker run -p 3000:80 <имя-образа>
+   ```
+
+6. Теперь откройте веб-браузер и перейдите по адресу `http://localhost:3000` для просмотра работающего веб-приложения.
+
