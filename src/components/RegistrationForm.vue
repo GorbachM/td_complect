@@ -215,7 +215,6 @@
     .form{
         position: absolute;
         width: 400px;
-        height: 70%;
         padding: 30px;
         border-radius: 6px;
         background: #FFF;
