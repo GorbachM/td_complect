@@ -34,7 +34,7 @@
                 </form>
                 <div v-else class="registration-successful">
                     Вы зарегистрированы!
-                    <img class="registration-successful_img" src="src/assets/anydo_104098.png" alt="done" />
+                    <img class="registration-successful_img" src="../assets/anydo_104098.png" alt="done" />
                 </div>
             </div>
         </div>
