@@ -34,7 +34,7 @@
                 </form>
                 <div v-else class="registration-successful">
                     Вы зарегистрированы!
-                    <img class="registration-successful_img" :src="require('@/assets/anydo_104098.png')" alt="done" />
+                    <img class="registration-successful_img" src="src/assets/anydo_104098.png" alt="done" />
                 </div>
             </div>
         </div>
@@ -215,6 +215,7 @@
     .form{
         position: absolute;
         width: 400px;
+        height: 465px;
         padding: 30px;
         border-radius: 6px;
         background: #FFF;
@@ -282,10 +283,4 @@
         margin-top: 10px;
     }
 
-    @media screen and (max-width: 400px) {
-        .form{
-            padding: 20px 10px;
-        }
-
-    }
 </style>
